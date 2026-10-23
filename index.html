@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Thoughtful tools for easier everyday cooking.">
+  <title>PrepNest — Little tools, easier cooking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">Small tools. Smoother everyday cooking.</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="PrepNest home"><span class="brand-mark">P</span><span>PrepNest</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#shop">Shop</a><a href="#story">Our idea</a><a href="#faq">FAQ</a>
+    </nav>
+    <button class="cart-button" id="cartToggle" aria-label="Open cart">Bag <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">MADE FOR EVERYDAY MOMENTS</p>
+        <h1>A little easier.<br><em>A lot more enjoyable.</em></h1>
+        <p class="hero-text">Useful kitchen finds chosen to make daily prep simpler, tidier, and more satisfying.</p>
+        <a class="primary-button" href="#shop">Explore the collection <span aria-hidden="true">↗</span></a>
+        <div class="hero-note"><span class="dot"></span> A small collection of practical essentials</div>
+      </div>
+      <div class="hero-art" aria-label="Kitchen tools illustration">
+        <div class="sun-shape"></div>
+        <div class="hero-card card-back"><span>PREP</span><small>good things start here</small></div>
+        <div class="hero-card card-front">
+          <div class="peeler-handle"></div><div class="peeler-head"></div>
+          <span class="tool-label">THE EVERYDAY PEELER</span>
+        </div>
+        <div class="floating-leaf leaf-one"></div><div class="floating-leaf leaf-two"></div>
+        <div class="hero-caption">Thoughtful tools<br>for everyday cooks.</div>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Store values">
+      <div><span>✳</span> Practical by design</div><div><span>⌁</span> Easy everyday use</div><div><span>♡</span> Less fuss, more cooking</div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE STARTER COLLECTION</p><h2>Useful little things</h2></div>
+        <p>Three ideas to begin with. Product details and prices are demo placeholders and must be verified before selling.</p>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="story-icon">✳</div>
+      <div><p class="eyebrow">OUR IDEA</p><h2>Good design should make daily life feel lighter.</h2></div>
+      <p>PrepNest is a concept store for useful kitchen helpers. We focus on simple products that solve small, everyday annoyances. We’re building our first collection carefully—one useful find at a time.</p>
+    </section>
+
+    <section class="faq-section" id="faq">
+      <p class="eyebrow">BEFORE YOU ORDER</p><h2>Good to know</h2>
+      <details><summary>Are these products available to order now?</summary><p>Not yet. This is a starter storefront demo. Confirm suppliers, product quality, delivery times, returns, and payment processing before accepting real orders.</p></details>
+      <details><summary>How long does shipping take?</summary><p>Shipping times have not been confirmed. Add accurate delivery estimates only after checking the supplier and destination country.</p></details>
+      <details><summary>Can I return an item?</summary><p>A return policy has not been set up yet. Publish a clear policy that complies with the rules that apply to your business and customers before launch.</p></details>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-mark">P</span><span>PrepNest</span></a><p>Little tools, easier cooking.</p><small>© <span id="year"></span> PrepNest. Demo store — not accepting payments.</small></footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag" aria-hidden="true">
+    <div class="cart-top"><h2>Your bag</h2><button id="cartClose" class="close-button" aria-label="Close bag">×</button></div>
+    <div id="cartItems" class="cart-items"><p class="empty-cart">Your bag is empty for now.</p></div>
+    <div class="cart-bottom"><div class="cart-total"><span>Subtotal</span><strong id="cartTotal">$0.00</strong></div><p class="cart-disclaimer">Demo only. Checkout and payments are not connected.</p><button id="checkoutButton" class="primary-button full-width">Review demo order</button></div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
